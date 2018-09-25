@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.1s;
+}
+
+body {
+  font-family: 'Roboto Condensed', Helvetica, sans-serif;
+  text-align: left;
+  font-size: 18px;
+  color: #303030;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #303030;
+  color: #EFEFEF;
+}
+
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	
+nav .container object {
+	width: 4.5em;
+    padding: 1.2em 0.5em;
+}
+
+nav .container .kontak-button {
+	text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 1em 1.25em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav-kontak {
+  background-color: #535353;
+  color: #EFEFEF;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+
+.nav-kontak .container {
+    padding: 1.5em;
+    display: flex;
+}
+
+.nav-kontak .container ul {
+	list-style: none;
+}
+
+.nav-kontak .container ul li {
+	padding: 0.25em 2em;
+}
+
+.nav-kontak .container ul li:hover {
+  color: #bdc3c7
+}
+
+.nav-kontak .container ul li:first-child {
+	text-transform: uppercase;
+  color: #C3FF00;
+  letter-spacing: 0.05em;
+}
+
+#tentang {
+  text-align: center;
+}
+
+#tentang h3 {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+#tentang p {
+  padding-top: 10px;
+}
+
+.foto {
+  text-align: center;
+}
+
+.foto h1 {
+  color: #2980b9;
+}
+
+#tombol {
+  text-align: center;
+  padding-top: 15px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    padding-top: 30px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#myInput {
+  padding-left: 100px;
+}

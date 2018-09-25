@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Rumah Affan</title>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet'>
+ 		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<nav>
+    		<div class='container'>
+      			<h1 id="affan">RUMAH AFFAN</h1>
+      			<div>
+        			<span class='kontak-button'>Kontak</span>
+      			</div>
+    		</div>
+  		</nav>
+  		<div class='nav-kontak'>
+    		<div class='container'>
+		      <ul>
+		      	<li>KONTAK</li>
+		        <li>Twitter</li>
+		        <li>Facebook</li>
+		        <li>Instagram</li>
+		        <li>Email</li>
+		      </ul>
+		    </div>
+		</div>
+		<div class="foto">
+			<img src="affan.jpg" alt="foto saya" height="340" width="340">
+			<h1>HALO</h1>
+		</div>
+		<div id="tentang">
+			<h3>Tentang Affan</h3>
+			<p id="teks">Lahir di Madiun pada tanggal 11 Februari 1999.<br>Memiliki adik kandung yang bernama Yafi Salma An Nafi' yang memiliki selisih umur 5 tahun dengannya.</p>
+		</div>
+		<div id="tombol">
+			<button id="btn1">1</button>
+			<button id="btn2">2</button>
+			<button id="btn3">3</button>
+		</div>
+		<script>
+			$(document).ready(function(){
+			    $(".kontak-button").click(function(){
+			        $(".nav-kontak").slideToggle();
+			    });
+
+				$("#btn1").click(function(){
+			        $("#teks").html("Lahir di Madiun pada tanggal 11 Februari 1999. <br> Memiliki adik kandung yang bernama Yafi Salma An Nafi' yang memiliki selisih umur 5 tahun dengannya.");
+			    });
+
+			    $("#btn2").click(function(){
+			        $("#teks").html("Sekolah sampai SMP di Madiun, mulai merantau keluar kota sejak SMA di MA Unggulan Amanatul Ummah, Mojokerto. <br> Lulus dari MAU pada tahun 2017.");
+			    });
+
+			    $("#btn3").click(function(){
+			        $("#teks").html("Sekarang sedang berjuang di Institut Teknologi Sepuluh Nopember, Surabaya.");
+			    });
+
+			    $("#myInput").on("keyup", function() {
+				    var value = $(this).val().toLowerCase();
+					$("#myTable tr").filter(function() {
+				      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				    });
+				});
+			});
+		</script>
+		<br><br>
+		<input id="myInput" type="text" placeholder="Search..">
+		<br><br>
+		<table>
+		  <thead>
+		    <tr>
+		      <th>Data Diri</th>
+		      <th>Keterangan</th>
+		    </tr>
+		  </thead>
+		  <tbody id="myTable">
+		    <tr>
+		      <td>Nama</td>
+		      <td>Affan Ahsanul Habib</td>
+		    </tr>
+		    <tr>
+		      <td>Tanggal Lahir</td>
+		      <td>11 Februari 1999</td>
+		    </tr>
+		    <tr>
+		      <td>Jenis Kelamin</td>
+		      <td>Laki-Laki</td>
+		    </tr>
+		    <tr>
+		      <td>Pekerjaan</td>
+		      <td>Mahasiswa</td>
+		    </tr>
+		  </tbody>
+		</table>
+	</body>
+</html>
